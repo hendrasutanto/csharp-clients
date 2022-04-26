@@ -134,7 +134,6 @@ namespace CCloud
             using (var consumer = new ConsumerBuilder<string, string>(consumerConfig).Build())
             {
                 consumer.Subscribe(topic);
-                var totalCount = 0;
                 try
                 {
                     while (true)
